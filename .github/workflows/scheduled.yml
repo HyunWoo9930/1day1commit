@@ -16,11 +16,11 @@ jobs:
         with:
           repository: ${{ github.repository }}
           token: ${{ secrets.MY_GITHUB_TOKEN }}
-          path: infra-study
+          path: 1day1commit
 
       - name: Add date and push
         run: |
-          cd infra-study
+          cd 1day1commit
           date >> date.txt
           git add .
           git config --global user.email "hw62459930@gmail.com"
